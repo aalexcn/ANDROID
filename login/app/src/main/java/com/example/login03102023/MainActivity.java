@@ -21,7 +21,6 @@ public class MainActivity extends AppCompatActivity
 
     private ServicePeliculas sPeliculas = new ServicePeliculas(this);
     private static MainActivity mainActivity = null;
-
     public static MainActivity getInstance() {
         return mainActivity;
     }
@@ -43,7 +42,7 @@ public class MainActivity extends AppCompatActivity
 
 
     @Override
-    public void showPeliculas(String messagge) {
-
+    public void showPeliculas(String message) {
+        Toast.makeText(mainActivity, message, Toast.LENGTH_SHORT).show();
     }
 }
